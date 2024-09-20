@@ -18,13 +18,13 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const handleLogin = async (username: string, password: string) => {
     const response = await login(username, password);
     setUser(response.data);
-    router.push('/');
+    router.push('/dashboard');
   };
 
   const handleRegister = async (username: string, password: string) => {
     const response = await register(username, password);
     setUser(response.data);
-    router.push('/');
+    router.push('/dashboard');
   };
 
   const handleLogout = () => {

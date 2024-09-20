@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000'; // เปลี่ยนเป็น URL ของ backend ของคุณ
+const API_URL = 'http://localhost:8000/auth'; 
 
 export const register = async (username: string, password: string) => {
   return axios.post(`${API_URL}/register`, { username, password });

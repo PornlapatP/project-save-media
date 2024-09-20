@@ -1,3 +1,4 @@
+"use client"
 import { useState, useContext } from 'react';
 import { uploadFile } from '../services/api';
 import styles from '../styles/FileUpload.module.css';
